@@ -6,10 +6,10 @@ if __name__ == '__main__':
 
     while True:
         cnt = 0
-        for n in nList:
+        for n in nList: # minNum이 nList의 수 중 3개 이상과 매치 되는지 확인
             if minNum % n == 0:
                 cnt += 1
-        if cnt >= 3:
+        if cnt >= 3:    # nList의 수 중 3개 이상과 매치되면 minNum 출력 후 종료
             print(minNum)
             break
         minNum += 1
